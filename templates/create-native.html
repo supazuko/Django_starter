@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Create Native</title>
+</head>
+<body>
+    <h2>Create a Native</h2>
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ forms.errors }}
+        {{ form.as_p }}
+{#        <h4>Enter first name</h4>#}
+{#        <input name="first_name" type="text" placeholder="first name">#}
+{#        <h4>Enter last name</h4>#}
+{#        <input name="last_name" type="text" placeholder="last name">#}
+{#        <h4>Select Cohort</h4>#}
+{#        <input name="cohort" type="number">#}
+{#        <h4>Upload image</h4>#}
+{#        <input name="image" type="image">#}
+        <input type="submit" value="Save"/>
+    </form>
+</body>
+</html>
